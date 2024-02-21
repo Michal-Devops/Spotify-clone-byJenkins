@@ -52,7 +52,7 @@
                       width="27"
                       src="https://yt3.ggpht.com/yti/AGOGRCrry8gHNTrS-EguLLHqejvnPJMmO4AZ-e84kus4=s88-c-k-c0x00ffffff-no-rj"
                     >
-                    <div class="text-white text-[14px] ml-1.5 font-semibold">John Weeks Dev</div>
+                    <div class="text-white text-[14px] ml-1.5 font-semibold">Michał</div>
                     <ChevronDown v-if="!openMenu" @click="openMenu = true" fillColor="#FFFFFF" :size="25" />
                     <ChevronUp v-else @click="openMenu = false" fillColor="#FFFFFF" :size="25" />
                 </div>
