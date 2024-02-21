@@ -39,20 +39,20 @@ pipeline{
                 script{
                    withDockerRegistry(credentialsId: 'docker', toolName: 'docker'){   
                        sh "docker build -t spotify"
-                       sh "docker tag spotify Darin912/spotify:latest"
-                       sh "docker push Darin912/spotify:latest"
+                       sh "docker tag spotify darin912/spotify:latest"
+                       sh "docker push darin912/spotify:latest"
                     }
                 }
             }
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image Darin912/netflix:latest > trivyimage.txt" 
+                sh "trivy image darin912/netflix:latest > trivyimage.txt" 
             }
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d --name spotify -p 8081:80 Darin912/spotify:latest'
+                sh 'docker run -d --name spotify -p 8081:80 darin912/spotify:latest'
             }
         }
     }
