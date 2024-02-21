@@ -1,0 +1,23 @@
+aws ec2 create-security-group --group-name spotify-jenkins-sg --description "Security Group for Spotify Jenkins"
+
+
+#SSH
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+# Jenkins
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 8080 --cidr 0.0.0.0/0
+
+# App
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 8081 --cidr 0.0.0.0/0
+
+# SonarQube
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 9000 --cidr 0.0.0.0/0
+
+# HTTPS
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 443 --cidr 0.0.0.0/0
+
+# HTTP
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 80 --cidr 0.0.0.0/0
+
+#prometheus
+aws ec2 authorize-security-group-ingress --group-name spotify-jenkins-sg --protocol tcp --port 9090 --cidr 0.0.0.0/0

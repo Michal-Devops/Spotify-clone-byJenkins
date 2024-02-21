@@ -1,0 +1,3 @@
+cd /d/keys
+aws ec2 create-key-pair --key-name spotify-rsa --query 'KeyMaterial' --output text > spotify-rsa.pem
+chmod 400 spotify-rsa.pem

@@ -1,0 +1,1 @@
+aws ec2 run-instances --image-id ami-XXXXXXX --count 1 --instance-type t2.large --key-name spotify-rsa --security-group-ids sg-XXXXXXXX --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=spotify-jenkins}]'
