@@ -145,9 +145,14 @@ Choose "Secret text" as the kind of credentials.
 Enter your DockerHub credentials (Username and Password) and give the credentials an ID (e.g., "docker").
 Click "OK" to save your DockerHub credentials.
 ```
+Now we can use ass Jenkinsfile as new job in jenkins 
+
 
 I find that we need do 
 ```
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
+
+
+
 
