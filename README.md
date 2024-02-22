@@ -174,3 +174,10 @@ sudo systemctl restart jenkins
     chmod +x node-exporter-install.sh
     ./node-exporter-install.sh
     
+
+    So now it is time to edit prometheus.yml 
+    for my configuration I prepared this file for myself earlier in my
+    repo so just download the repo and copy the file 
+       ```
+     cd  Spotify-clone-byJenkins/monitoring
+     sudo cp prometheus.yml /etc/prometheus/prometheus.yml
