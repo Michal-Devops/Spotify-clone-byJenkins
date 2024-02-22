@@ -157,7 +157,7 @@ sudo systemctl restart jenkins
 
 **Phase 4: Monitoring **
 
-    Install prometheus i had script for that
+    1.Install prometheus i had script for that
 
     git clone  https://github.com/Michal-Devops/Spotify-clone-byJenkins.git
 
@@ -166,7 +166,7 @@ sudo systemctl restart jenkins
     ./install-prometheus.sh
 
 
-    Install node-exporter from script 
+    2.Install node-exporter from script 
 
     so 
     git pull -v
@@ -183,3 +183,13 @@ sudo systemctl restart jenkins
      sudo cp prometheus.yml /etc/prometheus/prometheus.yml
      promtool check config /etc/prometheus/prometheus.yml
      curl -X POST http://localhost:9090/-/reload
+
+
+     3.Install Grafana
+
+     I had script for that 
+
+     cd Spotify-clone-byJenkins/monitoring
+     chmod +x chmod +x grapfana.sh
+     ./grapfana.sh
+     That will be acess on IP:3000 admin/admin
