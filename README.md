@@ -199,5 +199,9 @@ sudo systemctl restart jenkins
     ```
         Go to manage jenkis , plugins , avaliable and find prometheus metrics 
 
-        
+
+    5. Grafana Dashboards 
+
+        We click imprort dashboard to node exporter we write id 1860
+        to jenkins we write id 9964
 
