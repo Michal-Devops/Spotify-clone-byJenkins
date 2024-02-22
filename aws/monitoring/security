@@ -1,0 +1,20 @@
+aws ec2 create-security-group --group-name my-security-group --description "My security group"
+
+
+# HTTP
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 80 --cidr 0.0.0.0/0
+
+# SSH
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 22 --cidr 0.0.0.0/0
+
+# SonarQube
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 9000 --cidr 0.0.0.0/0
+
+# node_exporter
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 9100 --cidr 0.0.0.0/0
+
+# HTTPS
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 443 --cidr 0.0.0.0/0
+
+# Grafana
+aws ec2 authorize-security-group-ingress --group-name my-security-group --protocol tcp --port 3000 --cidr 0.0.0.0/0
