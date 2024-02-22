@@ -181,3 +181,5 @@ sudo systemctl restart jenkins
        ```
      cd  Spotify-clone-byJenkins/monitoring
      sudo cp prometheus.yml /etc/prometheus/prometheus.yml
+     promtool check config /etc/prometheus/prometheus.yml
+     curl -X POST http://localhost:9090/-/reload
