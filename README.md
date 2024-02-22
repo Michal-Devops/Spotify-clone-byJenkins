@@ -193,3 +193,11 @@ sudo systemctl restart jenkins
      chmod +x chmod +x grapfana.sh
      ./grapfana.sh
      That will be acess on IP:3000 admin/admin
+
+
+    4. We need to add Jenkins Plugins to Prometheus 
+    ```
+        Go to manage jenkis , plugins , avaliable and find prometheus metrics 
+
+        
+
