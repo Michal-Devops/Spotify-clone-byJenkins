@@ -153,6 +153,15 @@ I find that we need do
 sudo usermod -aG docker jenkins
 sudo systemctl restart jenkins
 
+```
 
+**Phase 4: Monitoring **
 
+    Install prometheus i had script for that
 
+    git clone  https://github.com/Michal-Devops/Spotify-clone-byJenkins.git
+
+    cd Spotify-clone-byJenkins/monitoring 
+    chmod +x install-prometheus.sh
+    ./install-prometheus.sh
+    
