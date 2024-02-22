@@ -164,4 +164,13 @@ sudo systemctl restart jenkins
     cd Spotify-clone-byJenkins/monitoring 
     chmod +x install-prometheus.sh
     ./install-prometheus.sh
+
+
+    Install node-exporter from script 
+
+    so 
+    git pull -v
+    cd Spotify-clone-byJenkins/monitoring 
+    chmod +x node-exporter-install.sh
+    ./node-exporter-install.sh
     
