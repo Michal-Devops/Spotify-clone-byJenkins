@@ -28,7 +28,7 @@ MORE ?
 - terraform init
 - terraform plan
 - teraform apply  : anwser yes  
-
+```
 
 
 -  Provision an EC2 instance on AWS with Ubuntu 22.04.
