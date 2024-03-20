@@ -18,7 +18,11 @@ MORE ?
 
 ### **PHASE 1  Setup**
 
+
 **Step 1: Launch EC2 (Ubuntu 22.04):**
+```
+I replaced all the machine configuration on aws with terraform , the configuration files , they are in the terraform folder 
+```
 
 -  Provision an EC2 instance on AWS with Ubuntu 22.04.
     - Or use my commands , for creating an instance in aws
