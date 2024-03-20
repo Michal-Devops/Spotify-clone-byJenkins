@@ -22,6 +22,13 @@ MORE ?
 **Step 1: Launch EC2 (Ubuntu 22.04):**
 
 **I replaced all the machine configuration on aws with terraform , the configuration files , they are in the terraform folder** 
+**Teraform**
+```
+- cd /Spotify-clone-byJenkins/Terraform
+- terraform init
+- terraform plan
+- teraform apply  : anwser yes  
+
 
 
 -  Provision an EC2 instance on AWS with Ubuntu 22.04.
